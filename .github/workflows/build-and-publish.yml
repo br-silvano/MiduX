@@ -1,0 +1,24 @@
+﻿name: Build and Publish MiduX
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+      - name: Build
+        run: dotnet build --configuration Release
+      - name: Run Tests
+        run: dotnet test --configuration Release
+      - name: Pack
+        run: dotnet pack --configuration Release --output ./artifacts
+      - name: Publish
+        run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
