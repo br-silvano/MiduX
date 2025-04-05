@@ -10,23 +10,23 @@
 
 ## 📚 Table of Contents
 
-- [Features](#-features)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Recommended Folder Structure](#-recommended-folder-structure)
-- [Usage Examples](#-usage-examples)
+- [Features](#features)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Recommended Folder Structure](#recommended-folder-structure)
+- [Usage Examples](#usage-examples)
   - [Commands and Queries](#todo-controller)
-  - [Notifications](#-usage-example-notifications)
-- [Exception Handling Middleware](#-exception-handling-middleware)
-- [Unit Testing and Mocking](#-unit-testing-and-mocking)
-- [Integration with Validation](#-integration-with-validation)
-- [Benefits of MiduX](#-benefits-of-midux)
-- [Contributions](#-contributions)
-- [License](#-license)
+  - [Notifications](#usage-example-notifications)
+- [Exception Handling Middleware](#exception-handling-middleware)
+- [Unit Testing and Mocking](#unit-testing-and-mocking)
+- [Integration with Validation](#integration-with-validation)
+- [Benefits of MiduX](#benefits-of-midux)
+- [Contributions](#contributions)
+- [License](#license)
 
 ---
 
-## 🚀 Features
+## 🚀 Features <a id="features"></a>
 
 - ✅ **Native support** for Commands, Queries, and Notifications  
 - 🧱 Built on the **Mediator pattern**  
@@ -36,7 +36,7 @@
 
 ---
 
-## 📦 Installation
+## 📦 Installation <a id="installation"></a>
 
 Add the `MiduX` package to your project via NuGet:
 
@@ -52,7 +52,7 @@ Alternatively, add the following to your `.csproj`:
 
 ---
 
-## ⚙️ Configuration
+## ⚙️ Configuration <a id="configuration"></a>
 
 In your `Program.cs` or `Startup.cs`, register your handlers and add the mediator to the dependency injection pipeline:
 
@@ -75,7 +75,7 @@ CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 
 ---
 
-## 🧩 Recommended Folder Structure
+## 🧩 Recommended Folder Structure <a id="recommended-folder-structure"></a>
 
 ```text
 └── src/
@@ -95,9 +95,9 @@ CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 
 ---
 
-## ✉️ Usage Examples
+## ✉️ Usage Examples <a id="usage-examples"></a>
 
-### Todo Controller
+### Todo Controller <a id="todo-controller"></a>
 
 #### Commands and Queries
 
@@ -148,7 +148,7 @@ public class CreateTodoCommandHandler : IRequestHandler<CreateTodoCommand, Guid>
 
 ---
 
-### 🔁 Usage Example: Notifications
+### 🔁 Usage Example: Notifications <a id="usage-example-notifications"></a>
 
 #### Sending a Notification (Application Layer)
 
@@ -172,7 +172,7 @@ public class AlertNotificationHandler : INotificationHandler<AlertNotification>
 
 ---
 
-## ⚠️ Exception Handling Middleware
+## ⚠️ Exception Handling Middleware <a id="exception-handling-middleware"></a>
 
 Use the middleware below to catch exceptions thrown by MiduX, especially `ValidationException`:
 
@@ -254,7 +254,7 @@ app.UseMiddleware<ExceptionHandlerMiddleware>();
 
 ---
 
-## 🧪 Unit Testing and Mocking
+## 🧪 Unit Testing and Mocking <a id="unit-testing-and-mocking"></a>
 
 Mocking `IMediator.Send<TRequest, TResponse>` simplifies unit testing for controllers and services. For example, using Moq:
 
@@ -277,7 +277,7 @@ public async Task GetById_ShouldReturnTodo_WhenFound()
 
 ---
 
-## ✅ Integration with Validation
+## ✅ Integration with Validation <a id="integration-with-validation"></a>
 
 MiduX integrates seamlessly with libraries like **FluentValidation**. For instance, create a validator:
 
@@ -295,7 +295,7 @@ When using the validation pipeline behavior, any validation errors will be caugh
 
 ---
 
-## 💡 Benefits of MiduX
+## 💡 Benefits of MiduX <a id="benefits-of-midux"></a>
 
 - **Clear separation** between read and write operations (CQRS)
 - **Low coupling** between application components
@@ -305,12 +305,12 @@ When using the validation pipeline behavior, any validation errors will be caugh
 
 ---
 
-## 📌 Contributions
+## 📌 Contributions <a id="contributions"></a>
 
 Contributions are welcome! If you encounter bugs or have suggestions for improvements, please open an issue or submit a pull request.
 
 ---
 
-## 📝 License
+## 📝 License <a id="license"></a>
 
 This project is licensed under the terms of the MIT License.
