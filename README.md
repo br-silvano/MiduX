@@ -3,7 +3,7 @@
 *Lightweight mediator pipeline for modern .NET applications*
 
 [![NuGet](https://img.shields.io/nuget/v/MiduX.svg)](https://www.nuget.org/packages/MiduX/)
-[![Build](https://img.shields.io/github/actions/workflow/status/br-silvano/MiduX/build.yml)](https://github.com/br-silvano/MiduX/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/br-silvano/MiduX/build-and-publish.yml)](https://github.com/br-silvano/MiduX/actions)
 [![License](https://img.shields.io/github/license/br-silvano/MiduX)](LICENSE)
 
 ---
