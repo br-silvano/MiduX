@@ -10,19 +10,19 @@
 
 ## 📚 Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Recommended Folder Structure](#recommended-folder-structure)
-- [Usage Examples](#usage-examples)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Recommended Folder Structure](#-recommended-folder-structure)
+- [Usage Examples](#-usage-examples)
   - [Commands and Queries](#todo-controller)
-  - [Notifications](#usage-example-notifications)
-- [Exception Handling Middleware](#exception-handling-middleware)
-- [Unit Testing and Mocking](#unit-testing-and-mocking)
-- [Integration with Validation](#integration-with-validation)
-- [Benefits of MiduX](#benefits-of-midux)
-- [Contributions](#contributions)
-- [License](#license)
+  - [Notifications](#-usage-example-notifications)
+- [Exception Handling Middleware](#-exception-handling-middleware)
+- [Unit Testing and Mocking](#-unit-testing-and-mocking)
+- [Integration with Validation](#-integration-with-validation)
+- [Benefits of MiduX](#-benefits-of-midux)
+- [Contributions](#-contributions)
+- [License](#-license)
 
 ---
 
